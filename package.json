@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon index",
+    "client": "npm start --prefix my-app",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^5.13.1",
+    "@google-cloud/text-to-speech": "^3.3.0",
+    "concurrently": "^6.2.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
